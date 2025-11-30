@@ -82,6 +82,7 @@
       --secondary: #7c3aed;
       --success: #10b981;
       --error: #ef4444;
+      --hiring: #10b981;
     }
     
     [data-theme="light"] {
@@ -95,6 +96,7 @@
       --maintenance-primary: #00a86b;
       --success: #10b981;
       --error: #ef4444;
+      --hiring: #0d9c6d;
     }
 
     * { 
@@ -229,6 +231,30 @@
       width: 80%;
     }
 
+    /* Hiring Button */
+    .hiring-btn { 
+      border: none; 
+      padding: 10px 20px; 
+      margin-left: 10px; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      font-weight: 600; 
+      font-size: 0.9rem; 
+      background: var(--hiring); 
+      color: #fff; 
+      white-space: nowrap;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .hiring-btn:hover,
+    .hiring-btn:focus { 
+      background-color: #0d9c6d; 
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(16, 185, 129, 0.3);
+    }
+
     .login-btn { 
       border: none; 
       padding: 10px 20px; 
@@ -320,12 +346,6 @@
       background-clip: text;
       line-height: 1.2;
     }
-    <!-- Add in header/nav -->
-<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYw-6YvtassUB25LDLMt-U46SUaja9cXEtpqvt92DKxp2RIw/viewform?usp=publish-editor
-" target="_blank" rel="noopener">Careers / Apply</a></li>
-
-<!-- Or a footer CTA -->
-<p><strong>Join our team:</strong> <a href="https://forms.gle/your-google-form-link" target="_blank" rel="noopener">Apply here</a></p>
 
     .hero p { 
       font-size: clamp(1.1rem, 2vw, 1.3rem); 
@@ -828,6 +848,10 @@
         <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYw-6YvtassUB25LDLMt-U46SUaja9cXEtpqvt92DKxp2RIw/viewform?usp=publish-editor" 
+           target="_blank" class="hiring-btn">
+          We're Hiring
+        </a>
       </div>
     </nav>
     <button class="login-btn" onclick="window.location.href='login.html'" aria-label="Admin login">
@@ -1232,5 +1256,3 @@
   </script>
 </body>
 </html>
-
-
