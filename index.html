@@ -1,256 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- BASIC -->
+  <!-- Meta Tags -->
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO -->
-  <title>Code Cortex | Software House in Pakistan | Web, Mobile & AI Solutions</title>
-  <meta name="description" content="Code Cortex is a professional software house in Pakistan providing web development, mobile apps, AI solutions, automation, and custom software services globally.">
-  <meta name="keywords" content="
-  software house in Pakistan,
-  IT company Pakistan,
-  web development company Pakistan,
-  mobile app development Pakistan,
-  AI solutions company Pakistan,
-  custom software development,
-  enterprise software solutions,
-  business automation services,
-  digital transformation company,
-  technology consulting services,
-  startup software development,
-  software outsourcing Pakistan,
-  full stack development services,
-  cloud application development,
-  global IT services provider
-  ">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Code Cortex | Premier Software House in Pakistan | Digital Solutions</title>
+  <meta name="description" content="Code Cortex is a leading software development company in Pakistan providing enterprise-grade web, mobile, AI solutions, and digital transformation services for global clients.">
+  <meta name="keywords" content="software development Pakistan, web development company, mobile app development, AI solutions, enterprise software, digital transformation, custom software development, technology consulting, IT outsourcing Pakistan">
   <meta name="author" content="Code Cortex (SMC-Pvt.) Ltd.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.codecortexdigital.com/">
-
-  <!-- GOOGLE VERIFICATION -->
+  
+  <!-- Google Verification -->
   <meta name="google-site-verification" content="PASTE_YOUR_GOOGLE_CODE_HERE">
-
-  <!-- OPEN GRAPH -->
-  <meta property="og:title" content="Code Cortex | Software House in Pakistan">
-  <meta property="og:description" content="Professional Web, Mobile & AI Solutions by Code Cortex">
+  
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.codecortexdigital.com/">
-  <meta property="og:image" content="./assets/code_logo.png">
-
-  <!-- ICONS -->
-  <link rel="icon" href="./assets/code_logo.png" type="image/png">
+  <meta property="og:title" content="Code Cortex | Software Development Company Pakistan">
+  <meta property="og:description" content="Enterprise software solutions, web & mobile development, AI integration, and digital transformation services.">
+  <meta property="og:image" content="https://www.codecortexdigital.com/assets/og-image.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.codecortexdigital.com/">
+  <meta property="twitter:title" content="Code Cortex | Software Development Company Pakistan">
+  <meta property="twitter:description" content="Enterprise software solutions, web & mobile development, AI integration, and digital transformation services.">
+  <meta property="twitter:image" content="https://www.codecortexdigital.com/assets/og-image.png">
+  
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="./assets/code_logo.png">
+  <link rel="apple-touch-icon" href="./assets/code_logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- STRUCTURED DATA -->
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"Code Cortex (SMC-Pvt.) Ltd.",
-    "url":"https://www.codecortexdigital.com/",
-    "logo":"https://www.codecortexdigital.com/assets/code_logo.png",
-    "contactPoint":[{
-      "@type":"ContactPoint",
-      "telephone":"+92-315-722-7688",
-      "contactType":"customer service",
-      "areaServed":"Global"
-    }]
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Code Cortex (SMC-Pvt.) Ltd.",
+    "url": "https://www.codecortexdigital.com/",
+    "logo": "https://www.codecortexdigital.com/assets/code_logo.png",
+    "description": "Professional software development company providing web, mobile, and AI solutions",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Pakistan"
+    },
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+92-315-722-7688",
+      "contactType": "customer service",
+      "email": "info@codecortexdigital.com",
+      "areaServed": "Global",
+      "availableLanguage": ["English", "Urdu"]
+    }],
+    "sameAs": [
+      "https://www.linkedin.com/company/code-cortex",
+      "https://github.com/codecortex"
+    ]
   }
   </script>
 
   <style>
-    :root{
-      --bg:#1c1e26;
-      --panel:#2f3243;
-      --accent:#ffe27d;
-      --cta:#ff6b6b;
-      --text:#d9d9d9;
-    }
-    *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-    body{
-      font-family:Segoe UI,system-ui,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-
-    /* HEADER */
-    header{
-      position:fixed;
-      top:0;width:100%;
-      background:#2b2e3d;
-      padding:1rem 2rem;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      z-index:999;
-      box-shadow:0 4px 10px rgba(0,0,0,.4);
-    }
-    .header-left{display:flex;align-items:center;gap:12px}
-    .logo{width:46px;height:46px;border-radius:50%;border:2px solid var(--accent)}
-    nav a{
-      color:#fff;
-      text-decoration:none;
-      margin:0 10px;
-      font-size:.9rem;
-      font-weight:600;
-      text-transform:uppercase;
-    }
-    nav a:hover{color:var(--accent)}
-    .admin-btn{
-      background:var(--accent);
-      border:none;
-      padding:8px 18px;
-      font-weight:700;
-      cursor:pointer;
-      border-radius:4px;
+    :root {
+      --primary-dark: #0f172a;
+      --secondary-dark: #1e293b;
+      --accent-gold: #fbbf24;
+      --accent-red: #ef4444;
+      --text-light: #f8fafc;
+      --text-muted: #94a3b8;
+      --success: #10b981;
+      --border-radius: 8px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
-    /* SECTIONS */
-    section{
-      padding:6rem 2rem;
-      text-align:center;
-      scroll-margin-top:90px;
-    }
-    h2{color:var(--accent);font-size:2.4rem;margin-bottom:1rem}
-
-    /* HERO */
-    .hero{
-      min-height:100vh;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      padding-top:6rem;
-    }
-    .hero h2{
-      font-size:3rem;
-      background:linear-gradient(90deg,var(--accent),var(--cta));
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-    }
-    .hero p{max-width:720px;margin:1rem auto 2rem}
-
-    /* BUTTON */
-    .btn{
-      background:var(--cta);
-      color:#fff;
-      border:none;
-      padding:12px 28px;
-      border-radius:6px;
-      font-weight:600;
-      cursor:pointer;
-      transition:.2s;
-    }
-    .btn:hover{background:#ff4b4b}
-
-    /* CARDS */
-    .cards{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:1.6rem;
-    }
-    .card{
-      background:var(--panel);
-      padding:1.8rem;
-      border-radius:12px;
-      width:280px;
-      box-shadow:0 6px 20px rgba(0,0,0,.45);
-    }
-    .card i{
-      font-size:2rem;
-      color:var(--cta);
-      margin-bottom:1rem;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    /* CAREERS */
-    .jobs{
-      max-width:720px;
-      margin:2rem auto;
-      background:var(--panel);
-      padding:2rem;
-      border-radius:12px;
-      text-align:left;
-    }
-    .jobs li{
-      list-style:none;
-      padding:.8rem 0;
-      border-bottom:1px solid rgba(255,255,255,.1);
-      display:flex;
-      align-items:center;
-      gap:10px;
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
     }
 
-    /* CONTACT FORM */
-    form{
-      max-width:600px;
-      margin:2rem auto;
-      display:flex;
-      flex-direction:column;
-      gap:1rem;
-    }
-    input,textarea{
-      padding:12px;
-      border-radius:6px;
-      border:none;
-      font-size:.95rem;
-    }
-    textarea{resize:none;height:120px}
-
-    /* FOOTER */
-    footer{
-      background:#2b2e3d;
-      padding:2rem;
-      text-align:center;
-      font-size:.85rem;
-      margin-top:3rem;
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--primary-dark);
+      color: var(--text-light);
+      line-height: 1.7;
+      overflow-x: hidden;
     }
 
-    /* FLOAT BUTTONS */
-    .float{
-      position:fixed;
-      right:20px;
-      bottom:20px;
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-      z-index:999;
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      transition: var(--transition);
     }
-    .float a{
-      width:48px;
-      height:48px;
-      border-radius:50%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#fff;
-      font-size:20px;
-    }
-    .whatsapp{background:#25D366}
-    .top{background:var(--cta)}
 
-    /* ADMIN MODAL */
-    .modal{
-      display:none;
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,.6);
-      justify-content:center;
-      align-items:center;
-      z-index:9999;
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
     }
-    .modal-box{
-      background:var(--panel);
-      padding:2rem;
-      border-radius:12px;
-      width:320px;
-      text-align:center;
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      object-fit: contain;
+      border: 2px solid var(--accent-gold);
+      padding: 3px;
+      transition: var(--transition);
     }
-    .modal-box input{width:100%;margin:.5rem 0}
-    .close{cursor:pointer;color:var(--accent);float:right}
+
+    .logo:hover {
+      transform: rotate(5deg);
+      border-color: var(--accent-red);
+    }
+
+    .company-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-red));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0.5rem 0;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent-gold);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover {
+      color: var(--accent-gold);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .admin-btn {
+      background: linear-gradient(135deg, var(--accent-red), #dc2626);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .admin-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Mobile Menu */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-light);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Main Sections */
+    section {
+      padding: 6rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.8rem;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-red));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .section-title p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+      z-index: -1;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+
+    .highlight {
+      color: var(--accent-gold);
+      font-weight: 600;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: linear-gradient(135deg, var(--accent-red), #dc2626);
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--accent-gold);
+      color: var(--accent-gold);
+    }
+
+    .btn-outline:hover {
+      background: var(--accent-gold);
+      color: var(--primary-dark);
+    }
+
+    /* Cards */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .card {
+      background: var(--secondary-dark);
+      border-radius: 16px;
+      padding: 2.5rem;
+      transition: var(--transition);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: var(--accent-gold);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .card-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--accent-red), #dc2626);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+
+    .card p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .portfolio-item {
+      background: var(--secondary-dark);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .portfolio-img {
+      height: 200px;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: white;
+    }
+
+    .portfolio-content {
+      padding: 1.5rem;
+    }
+
+    /* Careers */
+    .careers-list {
+      max-width: 800px;
+      margin: 3rem auto;
+      background: var(--secondary-dark);
+      border-radius: 16px;
+      padding: 3rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .job-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .job-item:last-child {
+      border-bottom: none;
+    }
+
+    .job-info h4 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-light);
+    }
+
+    .job-tag {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.2);
+      color: #3b82f6;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Contact Form */
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      max-width: 1200px;
+      margin: 3rem auto 0;
+    }
+
+    .contact-info {
+      text-align: left;
+    }
+
+    .contact-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-light);
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-muted);
+    }
+
+    .contact-detail i {
+      color: var(--accent-gold);
+      font-size: 1.25rem;
+      width: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 1rem;
+      background: var(--secondary-dark);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--border-radius);
+      color: var(--text-light);
+      font-size: 1rem;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--accent-gold);
+    }
+
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--secondary-dark);
+      padding: 4rem 5% 2rem;
+      margin-top: 4rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-red));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Floating Action Buttons */
+    .float-buttons {
+      position: fixed;
+      right: 2rem;
+      bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 1000;
+    }
+
+    .float-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.25rem;
+      text-decoration: none;
+      transition: var(--transition);
+      box-shadow: var(--shadow-md);
+    }
+
+    .float-btn.whatsapp {
+      background: #25D366;
+    }
+
+    .float-btn.top {
+      background: linear-gradient(135deg, var(--accent-red), #dc2626);
+    }
+
+    .float-btn:hover {
+      transform: translateY(-3px) scale(1.1);
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content {
+      background: var(--secondary-dark);
+      border-radius: 16px;
+      padding: 3rem;
+      max-width: 400px;
+      width: 90%;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .close-modal:hover {
+      color: var(--accent-red);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      nav {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: var(--primary-dark);
+        flex-direction: column;
+        padding: 2rem;
+        transition: var(--transition);
+        z-index: 999;
+      }
+
+      nav.active {
+        left: 0;
+      }
+
+      .admin-btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      header {
+        padding: 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .section-title h2 {
+        font-size: 2.2rem;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .float-buttons {
+        right: 1rem;
+        bottom: 1rem;
+      }
+
+      .careers-list {
+        padding: 2rem;
+      }
+
+      .job-item {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+
+      .job-info {
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+
+    /* Animation */
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.6s ease forwards;
+    }
   </style>
 </head>
 
@@ -259,116 +712,605 @@
 <header>
   <div class="header-left">
     <img src="./assets/code_logo.png" alt="Code Cortex Logo" class="logo">
-    <h3>Code Cortex</h3>
+    <div class="company-name">CODE CORTEX</div>
   </div>
-  <nav>
-    <a href="#hero">Home</a>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#careers">Careers</a>
-    <a href="#contact">Contact</a>
+  
+  <button class="mobile-menu-btn" id="mobileMenuBtn">
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <nav id="mainNav">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#portfolio" class="nav-link">Portfolio</a>
+    <a href="#careers" class="nav-link">Careers</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <button class="admin-btn" onclick="openAdmin()">
+      <i class="fas fa-lock"></i> Admin
+    </button>
   </nav>
-  <button class="admin-btn" onclick="openAdmin()">Admin</button>
 </header>
 
 <main>
-
-<section class="hero" id="hero">
-  <h2>Innovating Ideas. Building Technology.</h2>
-  <p>
-    We design and deliver scalable web, mobile and AI-powered software solutions
-    for startups, enterprises and growing businesses worldwide.
-  </p>
-  <button class="btn" onclick="document.getElementById('contact').scrollIntoView()">Get in Touch</button>
-</section>
-
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="cards">
-    <div class="card"><i class="fas fa-code"></i><h3>Web Development</h3><p>Secure and scalable web applications.</p></div>
-    <div class="card"><i class="fas fa-mobile-alt"></i><h3>Mobile Applications</h3><p>Android & iOS solutions.</p></div>
-    <div class="card"><i class="fas fa-brain"></i><h3>AI Solutions</h3><p>Automation & intelligent systems.</p></div>
-    <div class="card"><i class="fas fa-tools"></i><h3>Support & Maintenance</h3><p>Reliable long-term support.</p></div>
-  </div>
-</section>
-
-<section id="about">
-  <h2>About Us</h2>
-  <p style="max-width:820px;margin:auto">
-    Code Cortex is a professional software house based in Pakistan,
-    providing secure, scalable and business-focused IT solutions
-    to clients across the globe.
-  </p>
-</section>
-
-<section id="portfolio">
-  <h2>Portfolio</h2>
-  <div class="cards">
-    <div class="card">Corporate Websites</div>
-    <div class="card">Mobile Applications</div>
-    <div class="card">AI & Automation Systems</div>
-  </div>
-</section>
-
-<section id="careers">
-  <h2>Careers</h2>
-  <p>Join our growing technology team.</p>
-
-  <div class="jobs">
-    <h3>Currently Available Positions</h3>
-    <ul>
-      <li><i class="fas fa-briefcase"></i> Full Stack Developer</li>
-    </ul>
-    <p style="margin-top:1rem">
-      📧 <strong>jobs@codecortexdigital.com</strong>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Transform Your Vision Into<br><span class="highlight">Digital Reality</span></h1>
+    <p>
+      We architect and engineer cutting-edge software solutions that drive business growth, 
+      enhance operational efficiency, and deliver exceptional user experiences.
     </p>
-  </div>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+      <a href="#contact" class="btn">
+        <i class="fas fa-paper-plane"></i> Start Your Project
+      </a>
+      <a href="#portfolio" class="btn btn-outline">
+        <i class="fas fa-eye"></i> View Our Work
+      </a>
+    </div>
+  </section>
 
-  <a class="btn" href="mailto:jobs@codecortexdigital.com?subject=Job Application - Code Cortex">Apply Now</a>
-</section>
+  <!-- Services Section -->
+  <section id="services">
+    <div class="section-title">
+      <h2>Our Core Services</h2>
+      <p>Comprehensive software development solutions tailored to your business needs</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card fade-in">
+        <div class="card-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Enterprise Web Development</h3>
+        <p>Scalable, secure, and high-performance web applications built with modern frameworks and best practices.</p>
+        <ul style="color: var(--text-muted); padding-left: 1.5rem; margin-top: 1rem;">
+          <li>Custom Web Applications</li>
+          <li>E-commerce Solutions</li>
+          <li>CMS Development</li>
+          <li>API Integration</li>
+        </ul>
+      </div>
+      
+      <div class="card fade-in">
+        <div class="card-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>Mobile App Development</h3>
+        <p>Native and cross-platform mobile applications for iOS and Android with seamless user experiences.</p>
+        <ul style="color: var(--text-muted); padding-left: 1.5rem; margin-top: 1rem;">
+          <li>iOS & Android Apps</li>
+          <li>React Native Development</li>
+          <li>App Maintenance</li>
+          <li>Store Deployment</li>
+        </ul>
+      </div>
+      
+      <div class="card fade-in">
+        <div class="card-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3>AI & Machine Learning</h3>
+        <p>Intelligent solutions leveraging artificial intelligence to automate processes and gain insights.</p>
+        <ul style="color: var(--text-muted); padding-left: 1.5rem; margin-top: 1rem;">
+          <li>Predictive Analytics</li>
+          <li>Process Automation</li>
+          <li>Chatbot Development</li>
+          <li>Computer Vision</li>
+        </ul>
+      </div>
+      
+      <div class="card fade-in">
+        <div class="card-icon">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <h3>Cloud & DevOps</h3>
+        <p>Cloud infrastructure setup, migration, and DevOps practices for scalable and reliable deployments.</p>
+        <ul style="color: var(--text-muted); padding-left: 1.5rem; margin-top: 1rem;">
+          <li>AWS/Azure/GCP Setup</li>
+          <li>CI/CD Pipelines</li>
+          <li>Containerization</li>
+          <li>Infrastructure as Code</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-title">
+      <h2>About Code Cortex</h2>
+      <p>Driving digital transformation through innovative technology solutions</p>
+    </div>
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+      <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-muted);">
+        Founded in Pakistan with a global vision, Code Cortex specializes in delivering 
+        enterprise-grade software solutions that empower businesses to thrive in the 
+        digital age. Our team of certified developers, architects, and engineers 
+        combines technical expertise with business acumen to deliver measurable results.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; margin-top: 3rem;">
+        <div style="text-align: center;">
+          <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent-gold);">20+</div>
+          <div style="color: var(--text-muted);">Projects Delivered</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent-gold);">5+</div>
+          <div style="color: var(--text-muted);">Industry Experts</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent-gold);">100%</div>
+          <div style="color: var(--text-muted);">Client Satisfaction</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent-gold);">24/7</div>
+          <div style="color: var(--text-muted);">Support Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <form action="send_mail.php" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button class="btn" type="submit">Send Message</button>
-  </form>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="section-title">
+      <h2>Featured Projects</h2>
+      <p>A glimpse into our successful software implementations</p>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-item fade-in">
+        <div class="portfolio-img">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="portfolio-content">
+          <h3>Enterprise CRM System</h3>
+          <p style="color: var(--text-muted); margin: 1rem 0;">Custom CRM solution with AI-powered analytics for sales optimization and customer relationship management.</p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: rgba(251, 191, 36, 0.1); color: var(--accent-gold); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">React</span>
+            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">Node.js</span>
+            <span style="background: rgba(16, 185, 129, 0.1); color: var(--success); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio-item fade-in">
+        <div class="portfolio-img">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="portfolio-content">
+          <h3>E-commerce Platform</h3>
+          <p style="color: var(--text-muted); margin: 1rem 0;">Scalable multi-vendor marketplace with mobile applications, payment integration, and inventory management.</p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: rgba(251, 191, 36, 0.1); color: var(--accent-gold); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">Vue.js</span>
+            <span style="background: rgba(239, 68, 68, 0.1); color: var(--accent-red); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">Laravel</span>
+            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">MySQL</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio-item fade-in">
+        <div class="portfolio-img">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="portfolio-content">
+          <h3>Financial Analytics Dashboard</h3>
+          <p style="color: var(--text-muted); margin: 1rem 0;">Real-time data visualization and predictive analytics platform for financial institutions.</p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: rgba(251, 191, 36, 0.1); color: var(--accent-gold); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">Python</span>
+            <span style="background: rgba(16, 185, 129, 0.1); color: var(--success); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">TensorFlow</span>
+            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem;">D3.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <p>
-    📧 info@codecortexdigital.com <br>
-    📞 +92 315 722 7688
-  </p>
-</section>
+  <!-- Careers Section -->
+  <section id="careers">
+    <div class="section-title">
+      <h2>Join Our Team</h2>
+      <p>Work with cutting-edge technologies and solve challenging problems</p>
+    </div>
+    
+    <div class="careers-list">
+      <h3 style="margin-bottom: 2rem; color: var(--text-light);">Current Openings</h3>
+      
+      <div class="job-item">
+        <div class="job-info">
+          <h4>Senior Full Stack Developer</h4>
+          <p style="color: var(--text-muted); margin-top: 0.5rem;">
+            <i class="fas fa-code" style="margin-right: 0.5rem;"></i>
+            React, Node.js, PostgreSQL, AWS
+            </span>
+        </div>
+        </button>
+      </div>
+      
+      <div class="job-item">
+        <div class="job-info">
+          <h4>DevOps Engineer</h4>
+          <p style="color: var(--text-muted); margin-top: 0.5rem;">
+            <i class="fas fa-server" style="margin-right: 0.5rem;"></i>
+            Kubernetes, Docker, CI/CD, Cloud Infrastructure
+          </p>
+          
+          </span>
+        </div>
+      </div>
+      
+      <div class="job-item">
+        <div class="job-info">
+          <h4>UI/UX Designer</h4>
+          <p style="color: var(--text-muted); margin-top: 0.5rem;">
+            <i class="fas fa-palette" style="margin-right: 0.5rem;"></i>
+            Figma, Adobe Suite, Prototyping, User Research
+          </p>
+          
+        </div>
+        </button>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 3rem;">
+      <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto 2rem;">
+        Don't see a perfect match? We're always looking for talented individuals. 
+        Send your resume to <strong>jobs@codecortexdigital.com</strong>
+      </p>
+      <button onclick="openApplicationForm()" class="btn btn-outline" style="margin: 0 0.5rem;">
+        <i class="fas fa-file-alt"></i> Apply for available Positions
+      </button>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-title">
+      <h2>Get In Touch</h2>
+      <p>Ready to start your next project? Let's discuss how we can help</p>
+    </div>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        
+        <div class="contact-detail">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <div style="font-weight: 600;">Email</div>
+            <div>info@codecortexdigital.com</div>
+          </div>
+        </div>
+        
+        <div class="contact-detail">
+          <i class="fas fa-phone"></i>
+          <div>
+            <div style="font-weight: 600;">Phone</div>
+            <div>+92 315 722 7688</div>
+          </div>
+        </div>
+        
+        <div class="contact-detail">
+          <i class="fas fa-clock"></i>
+          <div>
+            <div style="font-weight: 600;">Business Hours</div>
+            <div>Mon - Sat: 9:00 AM - 6:00 PM (PKT)</div>
+          </div>
+        </div>
+        
+        <div class="contact-detail">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <div style="font-weight: 600;">Location</div>
+            <div>Attock, Pakistan | Serving Clients Worldwide</div>
+          </div>
+        </div>
+        
+        <div class="contact-detail">
+          <i class="fas fa-globe"></i>
+          <div>
+            <div style="font-weight: 600;">Website</div>
+            <div>www.codecortexdigital.com</div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <form action="send_mail.php" method="POST" id="contactForm">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Your Name *" required>
+          </div>
+          
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Your Email *" required>
+          </div>
+          
+          <div class="form-group">
+            <input type="text" name="company" class="form-control" placeholder="Company Name">
+          </div>
+          
+          <div class="form-group">
+            <select name="service" class="form-control">
+              <option value="">Select Service</option>
+              <option value="web">Web Development</option>
+              <option value="mobile">Mobile App Development</option>
+              <option value="ai">AI Solutions</option>
+              <option value="consulting">Technology Consulting</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <textarea name="message" class="form-control" placeholder="Project Details *" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn" style="width: 100%;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
-  © 2025 Code Cortex (SMC-Pvt.) Ltd. | All Rights Reserved
+  <div class="footer-content">
+    <div>
+      <div class="footer-logo">CODE CORTEX</div>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+        Delivering innovative software solutions that drive business transformation and digital growth.
+      </p>
+      <div style="display: flex; gap: 1rem;">
+        <a href="https://www.linkedin.com/company/code-cortex" target="_blank" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/codecortex" target="_blank" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/codecortex" target="_blank" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/codecortex" target="_blank" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div>
+      <h4 style="color: var(--text-light); margin-bottom: 1.5rem;">Quick Links</h4>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <a href="#services" style="color: var(--text-muted); text-decoration: none; transition: var(--transition);">Services</a>
+        <a href="#portfolio" style="color: var(--text-muted); text-decoration: none; transition: var(--transition);">Portfolio</a>
+        <a href="#careers" style="color: var(--text-muted); text-decoration: none; transition: var(--transition);">Careers</a>
+        <a href="#contact" style="color: var(--text-muted); text-decoration: none; transition: var(--transition);">Contact</a>
+        <a href="#about" style="color: var(--text-muted); text-decoration: none; transition: var(--transition);">About Us</a>
+      </div>
+    </div>
+    
+    <div>
+      <h4 style="color: var(--text-light); margin-bottom: 1.5rem;">Services</h4>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <span style="color: var(--text-muted);">Web Development</span>
+        <span style="color: var(--text-muted);">Mobile Applications</span>
+        <span style="color: var(--text-muted);">AI & ML Solutions</span>
+        <span style="color: var(--text-muted);">Cloud & DevOps</span>
+        <span style="color: var(--text-muted);">Technology Consulting</span>
+      </div>
+    </div>
+    
+    <div>
+      <h4 style="color: var(--text-light); margin-bottom: 1.5rem;">Contact</h4>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <span style="color: var(--text-muted);">
+          <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>
+          info@codecortexdigital.com
+        </span>
+        <span style="color: var(--text-muted);">
+          <i class="fas fa-phone" style="margin-right: 0.5rem;"></i>
+          +92 315 722 7688
+        </span>
+        <span style="color: var(--text-muted);">
+          <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>
+          Attock, Pakistan
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    © 2025 Code Cortex (SMC-Pvt.) Ltd. | All Rights Reserved | Privacy Policy | Terms of Service
+  </div>
 </footer>
 
-<div class="float">
-  <a href="https://wa.me/923157227688" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-  <a href="#hero" class="top"><i class="fas fa-arrow-up"></i></a>
+<div class="float-buttons">
+  <a href="https://wa.me/923157227688" target="_blank" class="float-btn whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="#hero" class="float-btn top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
 </div>
 
-<!-- ADMIN MODAL -->
+<!-- Admin Modal -->
 <div class="modal" id="adminModal">
-  <div class="modal-box">
-    <span class="close" onclick="closeAdmin()">✕</span>
-    <h3>Admin Login</h3>
-    <input type="text" placeholder="Username">
-    <input type="password" placeholder="Password">
-    <button class="btn" style="margin-top:1rem">Login</button>
+  <div class="modal-content">
+    <button class="close-modal" onclick="closeAdmin()">&times;</button>
+    <h3 style="margin-bottom: 2rem; color: var(--text-light);">Admin Portal</h3>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Username" id="adminUsername">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password" id="adminPassword">
+    </div>
+    <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="adminLogin()">
+      <i class="fas fa-sign-in-alt"></i> Sign In
+    </button>
   </div>
 </div>
 
 <script>
-function openAdmin(){document.getElementById('adminModal').style.display='flex'}
-function closeAdmin(){document.getElementById('adminModal').style.display='none'}
+  // DOM Elements
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mainNav = document.getElementById('mainNav');
+  const contactForm = document.getElementById('contactForm');
+  
+  // Mobile Menu Toggle
+  mobileMenuBtn.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
+    mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
+      ? '<i class="fas fa-times"></i>' 
+      : '<i class="fas fa-bars"></i>';
+  });
+  
+  // Close mobile menu when clicking a link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('active');
+      mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+  });
+  
+  // Scroll effect for header
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 100) {
+      header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+      header.style.background = 'rgba(15, 23, 42, 0.98)';
+    } else {
+      header.style.boxShadow = 'none';
+      header.style.background = 'rgba(15, 23, 42, 0.95)';
+    }
+  });
+  
+  // Google Form Application
+  function openApplicationForm() {
+    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeYw-6YvtassUB25LDLMt-U46SUaja9cXEtpqvt92DKxp2RIw/viewform?usp=sharing&ouid=109774810177921470951';
+    
+    window.open(googleFormUrl, '_blank', 'noopener,noreferrer');
+    
+    // Show notification
+    showNotification('Opening application form...');
+  }
+  
+  // Notification function
+  function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.innerHTML = `
+      <div style="
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        background: var(--accent-gold);
+        color: var(--primary-dark);
+        padding: 1rem 1.5rem;
+        border-radius: var(--border-radius);
+        font-weight: 600;
+        box-shadow: var(--shadow-md);
+        z-index: 9999;
+        animation: slideIn 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      ">
+        <i class="fas fa-check-circle"></i>
+        ${message}
+      </div>
+    `;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+      notification.style.animation = 'slideIn 0.3s ease reverse';
+      setTimeout(() => notification.remove(), 300);
+    }, 3000);
+  }
+  
+  // Admin Modal Functions
+  function openAdmin() {
+    document.getElementById('adminModal').style.display = 'flex';
+  }
+  
+  function closeAdmin() {
+    document.getElementById('adminModal').style.display = 'none';
+  }
+  
+  function adminLogin() {
+    const username = document.getElementById('adminUsername').value;
+    const password = document.getElementById('adminPassword').value;
+    
+    // Simple validation
+    if (username && password) {
+      showNotification('Admin login successful!');
+      closeAdmin();
+      document.getElementById('adminUsername').value = '';
+      document.getElementById('adminPassword').value = '';
+    } else {
+      alert('Please enter both username and password');
+    }
+  }
+  
+  // Close modal when clicking outside
+  window.addEventListener('click', (event) => {
+    const modal = document.getElementById('adminModal');
+    if (event.target === modal) {
+      closeAdmin();
+    }
+  });
+  
+  // Form submission handler
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(contactForm);
+      const data = Object.fromEntries(formData);
+      
+      // Show success message
+      showNotification('Thank you! Your message has been sent.');
+      
+      // Reset form
+      contactForm.reset();
+      
+      // In a real application, you would send this data to your server
+      console.log('Form submitted:', data);
+      
+      // Example of sending to your PHP file
+      // fetch('send_mail.php', {
+      //   method: 'POST',
+      //   body: formData
+      // })
+      // .then(response => response.json())
+      // .then(data => {
+      //   showNotification('Thank you! Your message has been sent.');
+      //   contactForm.reset();
+      // })
+      // .catch(error => {
+      //   showNotification('Error sending message. Please try again.');
+      // });
+    });
+  }
+  
+  // Intersection Observer for animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+      }
+    });
+  }, observerOptions);
+  
+  // Observe all fade-in elements
+  document.querySelectorAll('.fade-in').forEach(el => {
+    observer.observe(el);
+  });
+  
+  // Initialize with first animation
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.hero').classList.add('fade-in');
+  });
 </script>
 
 </body>
