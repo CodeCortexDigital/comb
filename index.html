@@ -113,34 +113,23 @@
         "areaServed": "Global"
       },
       {
-  "@type": "ProfessionalService",
-  "@id": "https://www.codecortexdigital.com/#professionalservice",
-  "name": "Code Cortex - Software Development Company",
-  "image": "https://www.codecortexdigital.com/code_logo.png",
-  "url": "https://www.codecortexdigital.com/",
-  "telephone": "+92-315-722-7688",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "Pakistan",
-    "addressLocality": "Attock"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "33.7667",
-    "longitude": "72.3667"
-  },
-  "openingHours": "Mo-Sa 09:00-18:00"
-}
-
+        "@type": "ProfessionalService",
+        "@id": "https://www.codecortexdigital.com/#professionalservice",
+        "name": "Code Cortex - Software Development Company",
+        "image": "https://www.codecortexdigital.com/code_logo.png",
+        "url": "https://www.codecortexdigital.com/",
+        "telephone": "+92-315-722-7688",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Pakistan",
+          "addressLocality": "Attock"
+        },
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": "33.7667",
           "longitude": "72.3667"
         },
-        "url": "https://www.codecortexdigital.com/",
-        "telephone": "+92-315-722-7688",
-        "priceRange": "$$",
         "openingHours": "Mo-Sa 09:00-18:00"
       }
     ]
@@ -553,28 +542,39 @@
     .portfolio-content {
       padding: 1.5rem;
     }
- <section id="careers">
-  <div class="section-title">
-    <h2>Careers</h2>
-    <p>We are always looking for talented professionals to join our growing team.</p>
-  </div>
 
-  <div style="max-width:700px;margin:0 auto;text-align:center;">
-    <p style="color:var(--text-muted);font-size:1.1rem;">
-      Opportunities are available across multiple roles including development,
-      design, engineering, and technology operations.
-    </p>
+    /* Careers Section */
+    .careers-list {
+      max-width: 800px;
+      margin: 3rem auto 0;
+    }
 
-    <a onclick="openApplicationForm()" class="btn btn-outline" style="margin-top:1.5rem;">
-      <i class="fas fa-file-alt"></i> Apply for Available Positions
-    </a>
+    .job-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+      background: var(--secondary-dark);
+      border-radius: var(--border-radius);
+      margin-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      transition: var(--transition);
+    }
 
-    <p style="margin-top:1.2rem;color:var(--text-muted);font-size:0.95rem;">
-      Or email your resume at <strong>jobs@codecortexdigital.com</strong>
-    </p>
-  </div>
-</section>
+    .job-item:hover {
+      background: rgba(251, 191, 36, 0.05);
+      transform: translateX(5px);
+    }
 
+    .job-tag {
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--success);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
 
     /* Contact Section */
     .contact-container {
@@ -971,8 +971,7 @@
 
 <header itemscope itemtype="https://schema.org/Organization">
   <div class="header-left">
-    <!-- Logo path fixed for same directory -->
-    <img src="code_logo.png" alt="Code Cortex Logo - Software Development Company Pakistan" class="logo" itemprop="logo">
+    <img src="code_logo.png" alt="Code Cortex Logo - Software Development Company Pakistan" class="logo" itemprop="logo" width="50" height="50">
     <div class="company-name" itemprop="name">CODE CORTEX</div>
   </div>
   
@@ -1075,27 +1074,20 @@
       </div>
     </div>
   </section>
-<!-- SEO Content Section -->
-<section class="seo-content" id="seo-content">
-  <div class="seo-section">
-    <h2>Leading Software Development Company in Pakistan</h2>
-    <p>
-      Code Cortex is a <strong>leading software development company in Pakistan</strong>
-      delivering secure, scalable web, mobile, and AI solutions for startups,
-      enterprises, and global businesses.
-    </p>
-    <p>
-      Our team follows agile development, global coding standards, and continuous testing
-      to ensure reliable, high-quality software delivery.
-    </p>
-  </div>
-</section>
 
-      <p style="margin-top:1.5rem;">
-Our team follows agile development, global coding standards, and continuous testing
-to ensure reliable, high-quality software delivery.
-</p>
-
+  <!-- SEO Content Section -->
+  <section class="seo-content" id="seo-content">
+    <div class="seo-section">
+      <h2>Leading Software Development Company in Pakistan</h2>
+      <p>
+        Code Cortex is a <strong>leading software development company in Pakistan</strong>
+        delivering secure, scalable web, mobile, and AI solutions for startups,
+        enterprises, and global businesses.
+      </p>
+      <p>
+        Our team follows agile development, global coding standards, and continuous testing
+        to ensure reliable, high-quality software delivery.
+      </p>
     </div>
   </section>
 
@@ -1185,21 +1177,30 @@ to ensure reliable, high-quality software delivery.
         </div>
       </div>
     </div>
-</section>
+  </section>
 
   <!-- Careers Section -->
   <section id="careers">
-  <div class="section-title">
-    <h2>Join Our Team</h2>
-    <p>Work with cutting-edge technologies and solve challenging problems</p>
-  </div>
+    <div class="section-title">
+      <h2>Join Our Team</h2>
+      <p>Work with cutting-edge technologies and solve challenging problems</p>
+      <p style="text-align:center;color:var(--text-muted);margin-top:2rem;">
+        Apply online or send your CV to <strong>jobs@codecortexdigital.com</strong>
+      </p>
+    </div>
 
-  <div class="careers-list"></div>
+    <div class="careers-list"></div>
+    
+    <div style="max-width:700px;margin:3rem auto 0;text-align:center;">
+      <p style="color:var(--text-muted);font-size:1.1rem;">
+        Opportunities are available across multiple roles including development,
+        design, engineering, and technology operations.
+      </p>
 
-  <p style="text-align:center;color:var(--text-muted);margin-top:2rem;">
-    Apply online or send your CV to <strong>jobs@codecortexdigital.com</strong>
-  </p>
-</section>
+      <a onclick="openApplicationForm()" class="btn btn-outline" style="margin-top:1.5rem;">
+        <i class="fas fa-file-alt"></i> Apply for Available Positions
+      </a>
+    </div>
   </section>
 
   <!-- Contact Section -->
@@ -1265,16 +1266,16 @@ to ensure reliable, high-quality software delivery.
         Delivering innovative software solutions that drive business transformation and digital growth.
       </p>
       <div style="display: flex; gap: 1rem;">
-        <a href="https://www.linkedin.com/company/code-cortex" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
+        <a href="https://www.linkedin.com/company/code-cortex" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://github.com/codecortex" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
+        <a href="https://github.com/codecortex" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://twitter.com/codecortex" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
+        <a href="https://twitter.com/codecortex" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="https://www.facebook.com/codecortex" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
+        <a href="https://www.facebook.com/codecortex" target="_blank" rel="noopener noreferrer" aria-label="Facebook Page" style="color: var(--text-muted); font-size: 1.25rem; transition: var(--transition);">
           <i class="fab fa-facebook"></i>
         </a>
       </div>
@@ -1361,10 +1362,10 @@ to ensure reliable, high-quality software delivery.
 
 <!-- Floating Action Buttons -->
 <div class="float-buttons">
-  <a href="https://wa.me/923157227688" target="_blank" rel="noopener noreferrer" class="float-btn whatsapp">
+  <a href="https://wa.me/923157227688" target="_blank" rel="noopener noreferrer" class="float-btn whatsapp" aria-label="Contact on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
-  <a href="#hero" class="float-btn top">
+  <a href="#hero" class="float-btn top" aria-label="Scroll to top">
     <i class="fas fa-arrow-up"></i>
   </a>
 </div>
@@ -1379,11 +1380,11 @@ to ensure reliable, high-quality software delivery.
   <div class="modal-content">
     <button class="close-modal" onclick="closeAdmin()">&times;</button>
     <h3 style="margin-bottom: 2rem; color: var(--text-light);">Admin Portal</h3>
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Username" id="adminUsername">
+    <div style="margin-bottom: 1.5rem;">
+      <input type="text" class="form-control" placeholder="Username" id="adminUsername" style="width: 100%; padding: 0.75rem; background: var(--primary-dark); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--border-radius); color: var(--text-light);">
     </div>
-    <div class="form-group">
-      <input type="password" class="form-control" placeholder="Password" id="adminPassword">
+    <div style="margin-bottom: 1.5rem;">
+      <input type="password" class="form-control" placeholder="Password" id="adminPassword" style="width: 100%; padding: 0.75rem; background: var(--primary-dark); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--border-radius); color: var(--text-light);">
     </div>
     <button class="btn" style="width: 100%; margin-top: 1rem;" onclick="adminLogin()">
       <i class="fas fa-sign-in-alt"></i> Sign In
@@ -1585,13 +1586,20 @@ to ensure reliable, high-quality software delivery.
     
     const jobs = [
       {
-        title: "Positions Available",
+        title: "Full Stack Developer",
         location: "Attock, Pakistan",
         type: "Full-time"
       },
-     
-     
-      
+      {
+        title: "UI/UX Designer",
+        location: "Remote",
+        type: "Contract"
+      },
+      {
+        title: "DevOps Engineer",
+        location: "Attock, Pakistan",
+        type: "Full-time"
+      }
     ];
     
     careersList.innerHTML = jobs.map(job => `
@@ -1611,4 +1619,3 @@ to ensure reliable, high-quality software delivery.
 
 </body>
 </html>
-
